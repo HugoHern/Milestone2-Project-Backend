@@ -10,7 +10,7 @@ app.use(express.static('public')) //serve static files such as images, css files
 
 //Landing page GET request----  localhost:3000 on your local machine
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('DATING APP!')
 })
 //GET request to /user route
 app.get('/user', (req, res) => {
