@@ -13,5 +13,5 @@ DELETE	/profile/:id	Delete a profile
 
 
 ********* EXTRA ***************************
-POST	/places/:id/comment	Add comment
-DELETE	/places/:id/comment/:commentId	Delete a comment
+POST	/profile/:id/comment	Add comment
+DELETE	/profile/:id/comment/:commentId	Delete a comment
