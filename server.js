@@ -2,29 +2,10 @@
 const express = require('express') // importing express js library
 const app = express() // assigning express package to be used
 const port = 3000 // will run on localhost:3000
-const PG_URI="postgres://postgres:UNCJeff5000@localhost:5432/heart_busters"
-const { Sequelize } = require('sequelize') // assigning sequelize package
-
 
 
 //                      MIDDLEWARE
 app.use(express.static('public')) // serve static files such as images, css files, and javascript files
-
-//                      SEQUELIZE CONNECTION
-const sequelize = new Sequelize({
-    storage: PG_URI,
-    dialect: "postgres",
-    username: "postgres",
-    password: "UNCJeff5000"
-})
-
-// sequelize test
-try {
-    sequelize.authenticate()
-    console.log(`Connected with Sequelize at ${PG_URI}`)
-} catch(err) {
-    console.log(`Unable to connect: ${err}`)
-}
 
 //                       ROUTES
 
