@@ -10,6 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "node.js": "^0.0.1-security",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "postgres": "^3.2.4",
+    "react": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "sequelize": "^6.21.3"
   }
 }

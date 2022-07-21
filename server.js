@@ -1,14 +1,15 @@
 //                        DEPENDENCIES
-const express = require('express') //importing express js library
-const app = express() //assigning express package to be used
+const express = require('express') // importing express js library
+const app = express() // assigning express package to be used
 const port = 3000 // will run on localhost:3000
 
+
 //                      MIDDLEWARE
-app.use(express.static('public')) //serve static files such as images, css files, and javascript files
+app.use(express.static('public')) // serve static files such as images, css files, and javascript files
 
 //                       ROUTES
 
-//Landing page GET request----  localhost:3000 on your local machine
+// Landing page GET request----  localhost:3000 on your local machine
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
