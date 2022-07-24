@@ -3,7 +3,7 @@ const demographics = require("express").Router();
 const db = require("../models");
 const { Demo } = db;
 
-// Find a Specific User's Demo
+// Find a Specific User's Demo SEQUELIZE ERROR
 demographics.get("/:user_id/demographics", async (req, res) => {
   try {
     const foundDemo = await Demo.findAll({

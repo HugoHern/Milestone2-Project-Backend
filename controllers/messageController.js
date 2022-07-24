@@ -13,7 +13,7 @@ messages.get("/:user_id/messages", async (req, res) => {
   }
 });
 
-// Find a Specific Message
+// Find a Specific Message NOT WORKING
 messages.get(":user_id/messages/:message_id", async (req, res) => {
   try {
     const foundMessage = await Message.findOne({
@@ -26,7 +26,7 @@ messages.get(":user_id/messages/:message_id", async (req, res) => {
 });
 
 // Create a Message
-messages.post("/", async (req, res) => {
+messages.post("/:user_id/messages", async (req, res) => {
   try {
     const newMessage = await Message.create(req.body);
     res.status(200).json({
