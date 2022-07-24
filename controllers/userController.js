@@ -1,7 +1,8 @@
 // Dependencies
 const users = require("express").Router();
 const db = require("../models");
-const { User, RefMatch, Content, Demo } = db;
+const { User} = db; // USER is the variable to access database
+
 
 // Find all Users
 users.get("/", async (req, res) => {
@@ -35,6 +36,16 @@ users.get("/:user_id", async (req, res) => {
 });
 
 // Create a User
+/*users.post('/', (req, res) => {
+  console.log('POSTED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+  const username = req.body.name
+  const password = req.body.password
+
+  User.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, password], (err, results) => {
+      if (err){console.log(err)} else {res.send('values inserted')}
+  })
+})*/
+
 users.post("/", async (req, res) => {
   try {
     const newUser = await User.create(req.body);
