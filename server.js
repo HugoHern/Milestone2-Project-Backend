@@ -40,6 +40,6 @@ app.use("/users/", demoController);
 
 
 //Calling listen method to connect to local machine's port
-app.listen(port, () => {
-    console.log(`running server on port ${port}`)
+app.listen(process.env.PORT, () => {
+    console.log(`running server on port ${process.env.PORT}`)
 }) 
