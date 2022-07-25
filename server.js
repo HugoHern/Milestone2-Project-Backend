@@ -1,6 +1,7 @@
 //                        DEPENDENCIES
 const express = require('express') // importing express js library
 const app = express() // assigning express package to be used
+
 require("dotenv").config();
 const { Sequelize } = require('sequelize')
 
