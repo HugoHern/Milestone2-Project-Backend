@@ -35,8 +35,12 @@ app.use("/users/", messageController);
 
 const demoController = require("./controllers/demoController");
 app.use("/users/", demoController);
-//                       ROUTES
 
+//                       ROUTES
+// Landing page GET request----  localhost:3000 on your local machine
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 
 
 //Calling listen method to connect to local machine's port
