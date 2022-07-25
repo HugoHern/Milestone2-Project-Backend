@@ -1,7 +1,6 @@
 //                        DEPENDENCIES
 const express = require('express') // importing express js library
 const app = express() // assigning express package to be used
-const port = 3001 // will run on localhost:3001
 require("dotenv").config();
 const { Sequelize } = require('sequelize')
 
@@ -40,6 +39,6 @@ app.use("/users/", demoController);
 
 
 //Calling listen method to connect to local machine's port
-app.listen(port, () => {
-    console.log(`running server on port ${port}`)
+app.listen(process.env.PORT, () => {
+    console.log(`running server on port ${process.env.PORT}`)
 }) 
