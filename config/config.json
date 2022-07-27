@@ -1,23 +1,30 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "UNCJeff5000",
-    "database": "heart_busters",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "vfvssooyxohcvj",
+    "password": "c6ae2e3ba08eb5cec782dd26195da195bda75a457146b359392cfd0e11df900f",
+    "database": "ddn7mdcbi5j9jk",
+    "host": "ec2-44-206-197-71.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      },
+      "keepAlive": true
+    }
   },
   "test": {
-    "username": "postgres",
-    "password": "UNCJeff5000",
-    "database": "heart_busters_test",
-    "host": "127.0.0.1",
+    "username": "vfvssooyxohcvj",
+    "password": "c6ae2e3ba08eb5cec782dd26195da195bda75a457146b359392cfd0e11df900f",
+    "database": "ddn7mdcbi5j9jk",
+    "host": "ec2-44-206-197-71.compute-1.amazonaws.com",
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "UNCJeff5000",
-    "database": "heart_busters_production",
-    "host": "127.0.0.1",
+    "username": "vfvssooyxohcvj",
+    "password": "c6ae2e3ba08eb5cec782dd26195da195bda75a457146b359392cfd0e11df900f",
+    "database": "ddn7mdcbi5j9jk",
+    "host": "ec2-44-206-197-71.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }

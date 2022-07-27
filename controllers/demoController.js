@@ -15,7 +15,7 @@ demographics.get("/:user_id/demographics", async (req, res) => {
 });
 
 // Create Demographics
-demographics.post("/", async (req, res) => {
+demographics.post("/:user_id/demographics", async (req, res) => {
   try {
     const newDemo = await Demo.create(req.body);
     res.status(200).json({
@@ -28,11 +28,11 @@ demographics.post("/", async (req, res) => {
 });
 
 // Update Demographics
-demographics.put("/:demo_id", async (req, res) => {
+demographics.put("/:user_id/demographics", async (req, res) => {
   try {
     const updatedDemo = await Demo.update(req.body, {
       where: {
-        demo_id: req.params.demo_id,
+        user_id: req.params.user_id,
       },
     });
     res.status(200).json({
