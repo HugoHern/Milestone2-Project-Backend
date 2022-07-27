@@ -20,6 +20,7 @@
     "postgres": "^3.2.4",
     "react": "^18.2.0",
     "react-router-dom": "^6.3.0",
-    "sequelize": "^6.21.3"
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1"
   }
 }
